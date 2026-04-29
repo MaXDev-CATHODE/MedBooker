@@ -1,0 +1,38 @@
+[
+  {
+    "id": "dr-owner",
+    "name": "Dr Aleksandra Nowak",
+    "specialization": "Dermatologia estetyczna",
+    "photo": null,
+    "isOwner": true,
+    "color": "#3c5c7c",
+    "bio": "Założycielka kliniki, specjalistka dermatologii estetycznej z 15-letnim doświadczeniem."
+  },
+  {
+    "id": "dr-iza",
+    "name": "Dr Izabela Kowalska",
+    "specialization": "Medycyna estetyczna",
+    "photo": null,
+    "isOwner": false,
+    "color": "#5a7fa0",
+    "bio": "Specjalistka medycyny estetycznej, absolwentka Akademii Medycznej w Warszawie."
+  },
+  {
+    "id": "dr-anna",
+    "name": "Dr Anna Wiśniewska",
+    "specialization": "Dermatologia estetyczna",
+    "photo": null,
+    "isOwner": false,
+    "color": "#7a9fbe",
+    "bio": "Ekspertka w zakresie zabiegów przeciwstarzeniowych i pielęgnacji skóry."
+  },
+  {
+    "id": "dr-kasia",
+    "name": "Dr Katarzyna Zielińska",
+    "specialization": "Medycyna estetyczna",
+    "photo": null,
+    "isOwner": false,
+    "color": "#9abfdc",
+    "bio": "Specjalistka laseroterapii i zabiegów rewitalizujących skórę."
+  }
+]

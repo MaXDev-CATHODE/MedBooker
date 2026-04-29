@@ -1,0 +1,72 @@
+[
+  {
+    "id": "p-001",
+    "phone": "+48600100200",
+    "firstName": "Anna",
+    "lastName": "Kowalska",
+    "email": "anna.kowalska@example.com"
+  },
+  {
+    "id": "p-002",
+    "phone": "+48601200300",
+    "firstName": "Maria",
+    "lastName": "Nowak",
+    "email": "maria.nowak@example.com"
+  },
+  {
+    "id": "p-003",
+    "phone": "+48602300400",
+    "firstName": "Katarzyna",
+    "lastName": "Wiśniewska",
+    "email": "k.wisniewska@example.com"
+  },
+  {
+    "id": "p-004",
+    "phone": "+48603400500",
+    "firstName": "Joanna",
+    "lastName": "Zielińska",
+    "email": "j.zielinska@example.com"
+  },
+  {
+    "id": "p-005",
+    "phone": "+48604500600",
+    "firstName": "Magdalena",
+    "lastName": "Wójcik",
+    "email": "m.wojcik@example.com"
+  },
+  {
+    "id": "p-006",
+    "phone": "+48605600700",
+    "firstName": "Agnieszka",
+    "lastName": "Kamińska",
+    "email": "a.kaminska@example.com"
+  },
+  {
+    "id": "p-007",
+    "phone": "+48606700800",
+    "firstName": "Natalia",
+    "lastName": "Lewandowska",
+    "email": "m.lewandowska@example.com"
+  },
+  {
+    "id": "p-008",
+    "phone": "+48607800900",
+    "firstName": "Beata",
+    "lastName": "Dąbrowska",
+    "email": "b.dabrowska@example.com"
+  },
+  {
+    "id": "p-009",
+    "phone": "+48608900100",
+    "firstName": "Ewa",
+    "lastName": "Szymańska",
+    "email": "e.szymanska@example.com"
+  },
+  {
+    "id": "p-010",
+    "phone": "+48609100200",
+    "firstName": "Aleksandra",
+    "lastName": "Woźniak",
+    "email": "a.wozniak@example.com"
+  }
+]

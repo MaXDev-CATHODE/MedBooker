@@ -1,0 +1,20 @@
+[
+  {
+    "id": "09cd017e-5a7d-46b7-a222-f24e4376469a",
+    "firstName": "sd",
+    "lastName": "x",
+    "email": "x@oo.pl",
+    "phone": "x",
+    "newsletterConsent": true,
+    "createdAt": "2026-04-25T18:00:02.556Z"
+  },
+  {
+    "id": "716705b3-125c-4137-8a13-5a91e69f362f",
+    "firstName": "d",
+    "lastName": "d",
+    "email": "d@e.l",
+    "phone": "d",
+    "newsletterConsent": true,
+    "createdAt": "2026-04-26T07:13:07.322Z"
+  }
+]
