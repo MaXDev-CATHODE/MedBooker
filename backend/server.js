@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 3001;
 
 const allowedOrigins = process.env.CORS_ORIGIN
   ? process.env.CORS_ORIGIN.split(',')
-  : ['http://localhost:5173'];
+  : ['http://localhost:5173', 'https://maxdev-cathode.github.io'];
 
 app.use(cors({
   origin: (origin, callback) => {

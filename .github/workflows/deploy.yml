@@ -38,6 +38,8 @@ jobs:
         
       - name: Build
         working-directory: ./frontend
+        env:
+          VITE_API_URL: https://medbooker-avx9.onrender.com
         run: npm run build
         
       # Kopiujemy index.html do 404.html żeby React Router poprawnie obsługiwał odświeżanie strony i ścieżki
