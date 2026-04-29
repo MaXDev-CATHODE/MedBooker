@@ -524,6 +524,11 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+/** Root endpoint for health monitoring */
+app.get('/', (req, res) => {
+  res.status(200).send('OK');
+});
+
 // ─── Start server ─────────────────────────────────────────────────────────────
 
 app.listen(PORT, () => {
