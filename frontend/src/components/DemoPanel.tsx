@@ -68,7 +68,8 @@ const DemoPanel: React.FC = () => {
     const connect = () => {
       if (!mounted) return;
 
-      const es = new EventSource('http://localhost:3001/api/demo/events');
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      const es = new EventSource(`${apiUrl}/api/demo/events`);
       esRef.current = es;
 
       es.onopen = () => {

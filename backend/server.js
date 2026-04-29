@@ -383,8 +383,8 @@ app.post('/api/reservations/create', (req, res) => {
 
   emitDemoEvent('payment', `Pending Reservation → slot: ${date} ${time} | ${doctorName} | TTL: 90s | awaiting payment`);
 
-  // Build payment URL — use env-based frontend URL or default to localhost
-  const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:5173';
+  // Build payment URL — dynamically use request origin
+  const frontendUrl = req.headers.origin || process.env.FRONTEND_URL || 'http://localhost:5173';
   const paymentUrl = `${frontendUrl}/mock-payment?reservationId=${reservationId}&amount=200&doctor=${encodeURIComponent(doctorName)}&date=${encodeURIComponent(date)}&time=${encodeURIComponent(time)}`;
 
   res.json({ success: true, reservationId, paymentUrl });

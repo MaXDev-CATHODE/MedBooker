@@ -47,7 +47,8 @@ const MockTpay: React.FC = () => {
     if (ttlStartedRef.current) return;
     ttlStartedRef.current = true;
 
-    fetch('http://localhost:3001/api/demo/ttl-start', {
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+    fetch(`${apiUrl}/api/demo/ttl-start`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ slotInfo: `${doctor} | ${date} ${time}` }),
