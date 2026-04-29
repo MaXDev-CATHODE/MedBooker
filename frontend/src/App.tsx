@@ -14,7 +14,7 @@ import ToastContainer from './components/ToastContainer';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ToastProvider>
         {/* Global overlays — visible on all pages */}
         <ExitPopup />
