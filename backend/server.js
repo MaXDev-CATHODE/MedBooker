@@ -383,8 +383,13 @@ app.post('/api/reservations/create', (req, res) => {
 
   emitDemoEvent('payment', `Pending Reservation → slot: ${date} ${time} | ${doctorName} | TTL: 90s | awaiting payment`);
 
-  // Build payment URL — dynamically use request origin
-  const frontendUrl = req.headers.origin || process.env.FRONTEND_URL || 'http://localhost:5173';
+  // Build payment URL — dynamically use request origin and handle GitHub Pages base path
+  let frontendUrl = process.env.FRONTEND_URL || 'http://localhost:5173';
+  if (req.headers.origin) {
+    frontendUrl = req.headers.origin.includes('github.io') 
+      ? req.headers.origin + '/MedBooker' 
+      : req.headers.origin;
+  }
   const paymentUrl = `${frontendUrl}/mock-payment?reservationId=${reservationId}&amount=200&doctor=${encodeURIComponent(doctorName)}&date=${encodeURIComponent(date)}&time=${encodeURIComponent(time)}`;
 
   res.json({ success: true, reservationId, paymentUrl });
